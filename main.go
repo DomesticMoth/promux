@@ -35,7 +35,11 @@ func handle(err error){
 }
 
 func ReadConfig() []Config {
-	b, err := ioutil.ReadFile(os.Args[1])
+	path := "/etc/promux"
+	if len(os.Args) > 1 {
+		path = os.Args[1]
+	}
+	b, err := ioutil.ReadFile(path)
 	handle(err)
 	configs := strings.Split(string(b), "---")
 	ret := []Config{}
