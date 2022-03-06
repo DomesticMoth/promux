@@ -1,0 +1,11 @@
+# Comments start with "#" symbol
+# First bolck
+127.0.0.1:8000
+1.2.3.4:1234 100ms
+2.3.4.5:2345
+# Delimiter
+---
+# Second block
+127.0.0.1:8001
+3.4.5.6:3456
+4.5.6.7:4567 20ms
